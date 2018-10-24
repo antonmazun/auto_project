@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/css/style.min.css">
+</head>
+<body>
+    <section class = 'full-screen'>
+        <nav>
+            <a href="">Lorem ipsum.</a>
+            <a href="">Lorem ipsum.</a>
+            <a href="">Lorem ipsum.</a>
+            <a href="">Lorem ipsum.</a>
+            <a href="">Lorem ipsum.</a>
+            <a href="">Lorem ipsum.</a>
+        </nav>
+        <div class="container slider">
+            <div class="left-col slide-left-js">Lorem ipsum.</div>
+            <div class="right-col slide-tight-js">
+                <span class="go_to_back hidden">Вернуться к списку услуг</span>
+                <div data-type="bronirovanie" class="js-item-nav item-check-auto bronirovanie">1</div>
+                <div data-type="tonirovanie" class="js-item-nav item-check-auto tonirovanie">2</div>
+                <div data-type="tonirovanie_polirovka" class="js-item-nav item-check-auto  tonirovanie_polirovka ">3</div>
+                <div class="js-item-nav item-check-auto">4</div>
+            </div>
+            <div data-type-task="bronirovanie" class="right-col-info">
+                <p>bronirovanie </p>
+            </div>
+            <div data-type-task="tonirovanie" class="right-col-info">
+                <p>tonirovanie </p>
+            </div>
+            <div data-type-task="tonirovanie_polirovka" class="right-col-info">
+                <p>tonirovanie_polirovka </p>
+            </div>
+        </div>
+    </section>
+
+    <section data-filter="bronirovanie"  class="hidden show-content">
+        <div class="container">
+
+            Тут инфа bronirovanie
+        </div>
+    </section>
+
+    <section data-filter="tonirovanie"  class="hidden show-content">
+        <div class="container">
+            Тут инфа tonirovanie
+        </div>
+    </section>
+
+    <section data-filter="tonirovanie_polirovka" class="hidden show-content">
+        <div class="container">
+            Тут инфа tonirovanie_polirovka
+        </div>
+    </section>
+
+    <script src="../dist/js/vendors.min.js"></script>
+    <script src="../dist/js/app.min.js"></script>
+</body>
+</html>

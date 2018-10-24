@@ -1,0 +1,108 @@
+* , body , html {
+  padding: 0;
+  margin: 0;
+}
+
+
+.full-screen {
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  background: grey;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin: 150px auto;
+  transform: translateX(0);
+  transition: transform 2s ease;
+
+  &.goto_left {
+    transform: translateX(-40%);
+  }
+
+
+  .left-col {
+    position: relative;
+    align-self: flex-end;
+    width: 30%;
+
+    &.pos_absolute {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .right-col{
+    position: relative;
+    width: 60%;
+    text-align: left;
+    height: 60vh;
+    background: white;
+
+    .item-check-auto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: red;
+      color: white;
+      position: absolute;
+      cursor: pointer;
+      &.bronirovanie {
+        top: 20px;
+        left: 100px;
+
+        &:hover{
+          opacity: 0.5;
+        }
+      }
+
+      &.tonirovanie {
+        top: 100px;
+        left: 20px;
+      }
+
+      &.tonirovanie_polirovka {
+        right: 20px;
+        top: 100px;
+      }
+    }
+  }
+}
+
+.show-content{
+  &.hidden {
+    display: none;
+  }
+}
+
+.right-col-info {
+  position: absolute;
+  left: -200px;
+  width: 40%;
+  opacity: 0;
+  transition: left 2s ease , opacity 2s ease;
+
+  &.go_to_right {
+    opacity: 1;
+    left: 100%;
+  }
+}
+
+.go_to_back {
+  color: red;
+  cursor: pointer;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s ease , opacity 1s ease;
+  &.hidden{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
